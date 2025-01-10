@@ -32,7 +32,7 @@ export default function Form() {
       <Stack sx={{justifyContent:'center', alignItems:'center', mb:1}}>
         <Steps/>
       </Stack>
-      <Typography variant='h6' gutterBottom sx={{color: '#393186'}}>Admission form</Typography>
+      <Typography variant='h6' gutterBottom sx={{color: '#E19B09'}}>Admission form</Typography>
       <Box onSubmit={handleSubmit} component="form" className='form-action' sx={{width:{md:'1013px',sm:'fit-content'}}}>
         <Typography variant='h6' gutterBottom className='form-head-1' sx={{color:'#000000'}}>Full name as in identification/ verification document (like Passport)</Typography>
         <Stack direction={{md:'row',xs:'column'}} spacing={3} sx={{justifyContent: "space-between",mb:4, mt:4}}>
@@ -101,7 +101,7 @@ export default function Form() {
         </Stack>
         <Stack direction='row' spacing={2} sx={{mt:8, justifyContent:'center'}}>
           {/* <Button type='cancel'>Back</Button> */}
-          <Button variant="contained" size='large' type='submit' sx={{background:'#393186', width:{md:'148px'}, height:{md:'53px'}}}>Next</Button>
+          <Button variant="contained" size='large' type='submit' sx={{background:'#E19B09', width:{md:'148px'}, height:{md:'53px'}}}>Next</Button>
         </Stack>
       </Box>
     </Box>
