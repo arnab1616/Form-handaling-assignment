@@ -18,12 +18,12 @@ const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
   },
   [`&.${stepConnectorClasses.active}`]: {
     [`& .${stepConnectorClasses.line}`]: {
-      backgroundColor:'#393186'
+      backgroundColor:'#E19B09'
     },
   },
   [`&.${stepConnectorClasses.completed}`]: {
     [`& .${stepConnectorClasses.line}`]: {
-     backgroundColor:'#393186'
+     backgroundColor:'#E19B09'
     },
   },
   [`& .${stepConnectorClasses.line}`]: {
@@ -37,7 +37,7 @@ const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
 const ColorlibStepIconRoot = styled('div')(({ theme }) => ({
   backgroundColor: '#E1E1E1',
   zIndex: 1,
-  color: '#393186',
+  color: '#252525',
   width: 25,
   height: 25,
   display: 'flex',
@@ -48,17 +48,17 @@ const ColorlibStepIconRoot = styled('div')(({ theme }) => ({
     {
       props: ({ ownerState }) => ownerState.active,
       style: {
-        backgroundColor: '#E0DCFF',
-        border: '2px solid #393186',
-        color: '#393186',
+        backgroundColor: '#FFEDC6',
+        border: '2px solid #E19B09',
+        color: '#E19B09',
       },
     },
     {
       props: ({ ownerState }) => ownerState.completed,
       style: {
-        backgroundColor: '#E0DCFF',
-        border: '2px solid #393186',
-        color: '#393186',
+        backgroundColor: '#FFEDC6',
+        border: '2px solid #E19B09',
+        color: '#E19B09',
       },
     },
   ],
@@ -101,7 +101,7 @@ ColorlibStepIcon.propTypes = {
 export default function Steps() {
   return (
     <Box sx={{ width: {md:'30%',xs:'100%'} }}>
-      <Stepper activeStep={0} alternativeLabel connector={<ColorlibConnector />} >
+      <Stepper activeStep={2} alternativeLabel connector={<ColorlibConnector />} >
         {steps.map((label) => (
           <Step key={label}>
             <StepLabel StepIconComponent={ColorlibStepIcon}  sx={{color: "#E19B09"}}></StepLabel>
